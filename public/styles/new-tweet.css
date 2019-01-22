@@ -1,0 +1,15 @@
+section.new-tweet {
+  border-radius: 5px;
+  background: #eeeeee;
+  border: 1px solid #d1d0d0;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+span.counter {
+  float: right;
+  padding-top: 2em;
+  padding-right: 5px;
+}
+h2 {
+}
