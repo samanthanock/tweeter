@@ -1,24 +1,40 @@
 section.new-tweet {
+  display: flex;
+  flex-direction: column;
   border-radius: 5px;
+  width: 70%;
   background-color: #d8d7d7;
   border: 1px solid #d1d0d0;
-  padding-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 2em;
+  /* padding-left: 2em; */
   margin: auto;
-  margin-top: 20 em;
-  padding-bottom: 10px;
 }
-
+div.topOfTweetBox {
+  display: flex;
+  flex-direction: column;
+  background-color: cornflowerblue;
+  width: 100%;
+  align-content: flex-start;
+}
 h2 {
+  display: flex;
   font-size: 28px;
   margin-top: 2px;
   padding-left: 5px;
 }
-span.counter {
-  float: right;
-  padding-top: 2em;
-  padding-right: 5px;
+div.newTweetFooter {
+  display: flex;
+  justify-content: space-between;
+  color: purple;
+  align-items: center;
+}
+input.button {
+  color: orange;
+  width: 60px;
+  height: 30px;
+}
+
+p.counter {
+  color: red;
 }
 
 textarea {

@@ -6,9 +6,8 @@
 html {
   box-sizing: border-box;
 }
-*,
-*:before,
-*:after {
+:before,
+:after {
   box-sizing: inherit;
 }
 
@@ -17,6 +16,9 @@ html {
  */
 
 body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   margin: 0;
   color: #244751;
   background-color: #eee;
@@ -24,10 +26,13 @@ body {
 }
 
 main.container {
-  width: 450px;
-  background-color: #fef9f9;
-  text-align: centre;
-  padding-top: 150px;
-  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  width: 50%;
   height: 100%;
+  background-color: #fef9f9;
+  /* text-align: centre; */
+  padding-top: 150px;
+  /* margin: auto; */
 }
