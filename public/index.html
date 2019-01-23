@@ -11,9 +11,8 @@
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" />
+    <link rel="stylesheet" href="/styles/new-tweet-container.css" />
 
-    <!-- JQUERY-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
     <!-- External JS -->
     <script src="/vendor/jquery-2.2.3.min.js"></script>
@@ -23,10 +22,7 @@
     <script src="/scripts/composer-char-counter.js"></script>
 
     <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
 
   <body>
@@ -41,10 +37,10 @@
       <section class="new-tweet">
 
         <div class="topOfTweetBox">
-            <h2>Compose Tweet</h2>
-            <form action="/tweets/" method="POST">
-            <div id="textInput">
-              <textarea id='newTweetText' name="text" placeholder="TWEET TEST"></textarea>
+          <h2>Compose Tweet</h2>
+          <form action="/tweets/" method="POST">
+            <div>
+              <textarea id='newTweetText' name="text" placeholder="What?"></textarea>
             </div>
           </div>
 
@@ -54,6 +50,18 @@
           </div>
         </form>
       </section>
+
+      <section class="newContainer">
+        <h3>New Tweet Container</h3>
+        <p class="tweetContent">here be the new tweets></p>
+        <footer class="NWTFooter">
+          <p class="newTweetContainterContent"> here is all the footer information</p>
+        </footer>
+      </section>
+
     </main>
+
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   </body>
 </html>
