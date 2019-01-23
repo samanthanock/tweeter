@@ -21,7 +21,7 @@ span.counter {
   padding-right: 5px;
 }
 
-textarea.text {
+textarea {
   overflow: auto;
   padding-right: 3em;
 }
