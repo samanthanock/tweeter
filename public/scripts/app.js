@@ -54,31 +54,31 @@ const tweetData = [
 ];
 
 $(function() {
-  const renderTweets = (tweetData) => {
+  const renderTweets = (tweets) => {
     // need to loop through tweetData object to find tweet information
-    tweetData.forEach(function(element) {
+    tweets.forEach(function(tweetObj) {
       // for each loop
-      var element = createTweetElement(tweetData);
+      // var element = createTweetElement(tweetData);
       // the element is assigned to being createTweetElement
-      $(createTweetElement(element)).prependTo('#new-tweet-box');
+      $(createTweetElement(tweetObj)).prependTo('#new-tweet-box');
       // each element now creatTweetElement is being prependedto the new tweet container
     });
   };
-  const createTweetElement = (tweetData) => {
+  const createTweetElement = (tweet) => {
     return `
   <article class="tweeters">
   <header id="top-of-tweet-box">
   <a href="#"></a>
-  <img class="userAvatar" src="${tweetData.user.avatars.small}"/>
-  <h3 class="userName">"${tweetData.user.name}"</h3>
-  <a class="user-handle" href="#">"${tweetData.user.handle}"</a>
+  <img class="userAvatar" src="${tweet.user.avatars.small}"/>
+  <h3 class="userName">"${tweet.user.name}"</h3>
+  <a class="user-handle" href="#">"${tweet.user.handle}"</a>
 </header>
 
-    <p id="user-tweet-conent">"${tweetData.content.text}"</p>
+    <p id="user-tweet-conent">"${tweet.content.text}"</p>
 
 
   <footer class="new-tweet-footer">
-    <div class="tweet-timestamp">"${tweetData.created_at}"</div>
+    <div class="tweet-timestamp">"${tweet.created_at}"</div>
     <div class="tweet-icons">
     <a href="#">
       <i class="fa fa flag" aria hidden="true"></i>
