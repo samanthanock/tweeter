@@ -23,7 +23,7 @@ body {
   color: #244751;
   background-color: #ffffff;
   font-family: 'Roboto Condensed', sans-serif;
-  height: 200%;
+  /* height: 100%; */
 }
 
 main.container {
@@ -31,10 +31,10 @@ main.container {
   /* align-items: center; */
   justify-content: center;
   width: 45%;
-  height: 200%;
+  /* height: 200%; */
   background-color: #d3d3d3;
   /* text-align: centre; */
-  padding-top: 150px;
+  padding-top: 35px;
   /* margin: auto; */
   flex-direction: column;
   align-items: center;

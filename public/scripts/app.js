@@ -43,7 +43,7 @@ $(function() {
     $header.append($h3);
     $article.append($article);
     $article.append($footer);
-    // $article.appendTo($('.newContainer'));
+    $article.appendTo($('.newContainer'));
     return $article;
   }
   var $articleElement = createTweetElement(tweetData);
