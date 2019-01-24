@@ -52,16 +52,21 @@ const tweetData = [
     created_at: 1461113796368
   }
 ];
-
+const allTweets = $('new-tweet-container');
 $(function() {
   const renderTweets = (tweets) => {
     // need to loop through tweetData object to find tweet information
-    tweets.forEach(function(tweetObj) {
-      // for each loop
-      // var element = createTweetElement(tweetData);
-      // the element is assigned to being createTweetElement
-      $(createTweetElement(tweetObj)).prependTo('#new-tweet-box');
-      // each element now creatTweetElement is being prependedto the new tweet container
+    $.ajax({
+      method: 'GET',
+      url: '/tweets'
+    }).done(function(tweets) {
+      allTweets.empty();
+
+      tweets.forEach(function(tweetObj) {
+        // for each loop
+        $(createTweetElement(tweetObj)).prependTo('#new-tweet-box');
+        // each element now creatTweetElement is being prependedto the new tweet container
+      });
     });
   };
   const createTweetElement = (tweet) => {
@@ -94,4 +99,21 @@ $(function() {
   `;
   };
   renderTweets(tweetData);
+
+  $('#button').on('submit', function(event) {
+    // prevent the default behavor
+    event.preventDefault();
+    // get the data from the form
+    // const content = $(this).find('input').val();
+    // ajax post request
+    const serialized = $(this).serialize();
+    $.ajax({
+      method: 'POST',
+      url: '/tweets',
+      data: serialized
+    }).done(function() {
+      // on success, refresh the creaks on the page
+      renderTweets();
+    });
+  });
 });
