@@ -3,42 +3,33 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
-
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" />
     <link rel="stylesheet" href="/styles/new-tweet-container.css" />
-
-
     <!-- External JS -->
     <script src="/vendor/jquery-2.2.3.min.js"></script>
-
-    <!-- JQUERY
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-
     <!-- App JS -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/composer-char-counter.js"></script>
-
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
-
   <body>
+
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px" />
       <span class="header">Tweeter</span>
     </nav>
+    <!-- End of nav bar -->
 
-    <!-- Page-specific (main) content here -->
+    <!-- New tweeter form-->
     <main class="container">
       <section class="new-tweet">
-
         <div class="topOfTweetBox">
           <h2>Compose Tweet</h2>
           <form action="/tweets/" method="POST">
@@ -46,27 +37,49 @@
               <textarea id='newTweetText' name="text" placeholder="What?"></textarea>
             </div>
           </div>
-
           <div class="newTweetFooter">
             <input class="button" type="submit" value="Tweet" />
             <p class="counter">140</p>
           </div>
         </form>
       </section>
+   <!-- End of new tweeter form-->
 
-      <section class="newContainer">
-        <header class="topOfContainer">
-        <img class="userAvatar" src="/images/bird.png" width="80px" height="80px" />
-        <h3>Cher</h3>
+
+      <!-- Tweet Container -->
+      <section id="new-tweet-box">
+        <article class="tweeters">
+
+        <header id="top-of-tweet-box>
+        <a href="#">
+        <img class="userAvatar"/>
+        <h3 class="userName">Cher</h3>
+        <a class="user-handle" href="#">aaa</a>
       </header>
-        <article class="tweetContent">Do you believe in life after love?
-        <footer class="NWTFooter">
-          <p class="newTweetContainterContent">time stamp</p>
-        </footer>
+
+          <p id="user-tweet-conent">bleep bloop</p>
+
+
+        <footer class="new-tweet-footer">
+          <div class="tweet-timestamp"></div>
+          <div class="tweet-icons">
+          <a href="#">
+            <i class="fa fa flag" aria hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa retweet" aria hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa heart" aria hidden="true"></i>
+          </a>
+      </div>
+       </footer>
+
+
       </article>
       </section>
 
-    </main>
 
+    </main>
   </body>
 </html>

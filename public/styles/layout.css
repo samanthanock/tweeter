@@ -22,20 +22,15 @@ body {
   margin: 0;
   color: #244751;
   background-color: #ffffff;
-  font-family: 'Roboto Condensed', sans-serif;
-  /* height: 100%; */
+  font-family: 'VT323', monospace;
 }
 
 main.container {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   width: 45%;
-  /* height: 200%; */
   background-color: #d3d3d3;
-  /* text-align: centre; */
   padding-top: 35px;
-  /* margin: auto; */
   flex-direction: column;
   align-items: center;
   border-left: 5px dashed;
