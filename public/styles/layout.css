@@ -26,7 +26,7 @@ body {
 main.container {
   display: flex;
   justify-content: center;
-  width: 45%;
+  width: 60%;
   background-color: #d3d3d3;
   padding-top: 35px;
   flex-direction: column;

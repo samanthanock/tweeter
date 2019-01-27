@@ -5,6 +5,8 @@
     <title>Tweeter - Home Page</title>
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/nav.css" />
@@ -15,8 +17,6 @@
     <!-- App JS -->
     <script src="/scripts/app.js"></script>
     <script src="/scripts/composer-char-counter.js"></script>
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
   </head>
   <body>
 
@@ -24,6 +24,10 @@
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px" />
       <span class="header">Tweeter</span>
+      <button type="submit" name="compose-button">
+          Compose
+        </button>
+      </nav>
     </nav>
     <!-- End of nav bar -->
 
@@ -39,6 +43,7 @@
           </div>
           <div class="newTweetFooter">
             <input class="button" type="submit" value="Tweet" />
+            <span class="error-msg"></span>
             <p class="counter">140</p>
           </div>
         </form>
