@@ -1,28 +1,32 @@
 nav#nav-bar {
   display: flex;
   background-color: #ffffff;
-  color: black;
+  color: palevioletred;
   padding-right: 2em;
-  padding-left: 2em;
+  padding-left: 1em;
   box-sizing: border-box;
-  /* position: fixed; */
-  width: 100%;
-  /* top: 0; */
-  justify-content: flex-start;
-  border-bottom: 5px dashed;
+  width: 60%;
+  justify-content: space-between;
+  border-bottom: 5px dashed palevioletred;
+}
+
+button {
+  color: palevioletred;
+  height: 2em;
+  width: 6em;
+  border-radius: 10px;
+  font-size: 1.5em;
+  box-shadow: 1px 1px grey;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 img.logo {
   height: 80px;
-  /* float: left; */
-  margin-right: 10px;
+  margin-right: 2em;
 }
 span.header {
-  /* float: left; */
   font-size: 2em;
-  /* margin-right: 36em; */
   line-height: 2;
-  /* position: static; */
-  font-family: 'VT323', monospace;
   font-size: 40px;
 }

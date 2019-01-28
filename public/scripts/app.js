@@ -73,7 +73,7 @@ $(function() {
     });
   });
   $('#nav-bar button').on('click', () => {
-    $('.new-tweet').slideToggle(300, () => {
+    $('.new-tweet').slideToggle(150, () => {
       $('textarea#newTweetText').select();
     });
   });
