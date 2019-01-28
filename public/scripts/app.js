@@ -7,6 +7,12 @@
 //
 
 $(function() {
+  function escape(str) {
+    var div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   const renderTweets = (tweets) => {
     // need to loop through tweetData object to find tweet information
     tweets.forEach(function(tweetObj) {
@@ -47,7 +53,8 @@ $(function() {
   };
   $('.new-tweet form').on('submit', function(event) {
     event.preventDefault();
-    const tweetText = $('textarea#newTweetText').val();
+    // check with mentor about escape and cross site scripting
+    const tweetText = escape($('textarea#newTweetText').val());
     if (tweetText.length === 0) {
       return $('.error-msg').text('hey maybe type something!!');
     }
@@ -64,6 +71,14 @@ $(function() {
         loadTweets();
       }
     });
+  });
+  $('#nav-bar button').on('click', () => {
+    $('.new-tweet').slideToggle(300, () => {
+      $('textarea#newTweetText').select();
+    });
+  });
+  $('textarea#newTweetText').on('focus', () => {
+    $('.error-msg').text('');
   });
   const loadTweets = () => {
     $.ajax({
