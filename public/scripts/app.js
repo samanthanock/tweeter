@@ -1,3 +1,5 @@
+// import { doesNotReject } from 'assert';
+
 // /*
 //  * Client-side JS logic goes here
 //  * jQuery is already loaded
@@ -43,27 +45,24 @@ $(function() {
     </footer>
     `;
   };
-  $('#newTweetText textarea').on('submit', function(event) {
+  $('.new-tweet form').on('submit', function(event) {
     event.preventDefault();
+    const tweetText = $('textarea#newTweetText').val();
+    if (tweetText.length === 0) {
+      return $('.error-msg').text('hey maybe type something!!');
+    }
+    if (tweetText.length > 140) {
+      return $('.error-msg').text('hey maybe type less!!');
+    }
     $.ajax({
       url: '/tweets',
       method: 'POST',
       data: $(this).serialize(),
-      success: (data) => {
-        $('#newTweetText textarea').val('');
+      success: () => {
+        $('textarea#newTweetText').val('');
         $('.counter').text('140');
-        $('#new-tweet-box').prependTo(data);
         loadTweets();
-      },
-      error: function(err) {}
-    });
-  });
-  $('#newTweetText textarea').on('focus', () => {
-    $('.error-msg').text('');
-  });
-  $('#nav-bar button').on('click', () => {
-    $('#newTweetText textarea').slideToggle(300, () => {
-      $('#newTweetText textarea').select();
+      }
     });
   });
   const loadTweets = () => {
