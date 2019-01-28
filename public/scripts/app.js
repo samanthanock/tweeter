@@ -27,8 +27,10 @@ $(function() {
     <article class="tweeters">
     <header id="top-of-tweet-box">
     <a href="#"></a>
+    <div class="user-container">
     <img class="userAvatar" src="${tweet.user.avatars.small}"/>
     <h3 class="userName">"${tweet.user.name}"</h3>
+    </div>
     <a class="user-handle" href="#">"${tweet.user.handle}"</a>
     </header>
 

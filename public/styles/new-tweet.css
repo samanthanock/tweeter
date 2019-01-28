@@ -53,7 +53,8 @@ textarea#newTweetText {
   border: 1px dashed black;
 }
 ::placeholder {
-  color: black;
-  font-family: 'VT323', monospace;
+  color: palevioletred;
   font-size: 30px;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
 }
