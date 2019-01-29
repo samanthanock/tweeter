@@ -8,6 +8,7 @@ nav#nav-bar {
   width: 60%;
   justify-content: space-between;
   border-bottom: 5px dashed palevioletred;
+  align-items: center;
 }
 
 button {
@@ -17,7 +18,7 @@ button {
   border-radius: 10px;
   font-size: 1.5em;
   box-shadow: 1px 1px grey;
-  margin-top: 1em;
+  margin-top: 1.5em;
   margin-bottom: 1em;
 }
 
@@ -30,4 +31,5 @@ span.header {
   font-size: 2em;
   line-height: 2;
   font-size: 40px;
+  margin-top: 1em;
 }

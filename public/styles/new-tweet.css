@@ -6,6 +6,7 @@ section.new-tweet {
   background-color: #f5f5f5;
   border: 2px dashed palevioletred;
   box-shadow: 2px 2px 2px 2px grey;
+  margin-bottom: 1em;
 }
 div.topOfTweetBox {
   display: flex;
