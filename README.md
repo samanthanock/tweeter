@@ -16,4 +16,8 @@ This repository is the starter code for the project: Students will fork and clon
 - Express
 - Node 5.10.x or above
 
-##Screencaps
+##Screenshots
+!["Screenshot of Tweet examples"](https://github.com/samanthanock/tweeter/blob/master/docs/tweetexample.png)
+!["Screenshot of layout and styling"](https://github.com/samanthanock/tweeter/blob/master/docs/layout.png)
+!["Screenshot of empty tweet error"](https://github.com/samanthanock/tweeter/blob/master/docs/errormsg.png)
+!["Screenshot of long Tweet error"](https://github.com/samanthanock/tweeter/blob/master/docs/errormsg2.png)
