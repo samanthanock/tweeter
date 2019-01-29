@@ -22,6 +22,7 @@ button {
 }
 
 img.logo {
+  margin-top: 0.5em;
   height: 80px;
   margin-right: 2em;
 }

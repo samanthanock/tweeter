@@ -41,13 +41,13 @@ $(function() {
     <div class="tweet-timestamp">"${tweet.created_at}"</div>
     <div class="tweet-icons">
     <a href="#">
-    <i class="fa fa flag" aria hidden="true"></i>
+    <i class="fa fa-flag"></i>
     </a>
     <a href="#">
-    <i class="fa fa retweet" aria hidden="true"></i>
+    <i class="fa fa-retweet"></i>
     </a>
     <a href="#">
-    <i class="fa fa heart" aria hidden="true"></i>
+    <i class="fa fa-heart"></i>
     </a>
     </div>
     </footer>

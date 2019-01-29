@@ -18,7 +18,8 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  color: #244751;
+  color: red;
+  font-size: 1.5em;
   align-items: center;
   font-family: 'VT323', monospace;
 }

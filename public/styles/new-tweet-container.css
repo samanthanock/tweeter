@@ -6,6 +6,7 @@ article.tweeters {
   background-color: #f5f5f5;
   height: 50%;
   border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px grey;
 }
 #new-tweet-box {
   display: flex;
@@ -55,7 +56,7 @@ p {
 
 footer.new-tweet-footer {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border-top: 2px dashed palevioletred;
   height: 2em;
   flex-direction: row;
@@ -65,14 +66,16 @@ div.tweet-timestamp {
   font-size: 18px;
   margin-top: 10px;
 }
-/* div.tweet-icons {
+
+div.tweet-icons {
   width: 20%;
   display: flex;
-  justify-content: space-between;
-  opacity: 0;
+  color: pink
+  /* justify-content: space-between; */
+/* opacity: 0;
   color: #00a087;
   padding: 2px;
-} */
+}
 
 /* footer .tweet-icons a {
   color: black;
