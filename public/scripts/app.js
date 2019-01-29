@@ -25,7 +25,7 @@ $(function() {
   const createTweetElement = (tweet) => {
     return `
     <article class="tweeters">
-    <header id="top-of-tweet-box">
+     <header id="top-of-tweet-box">
     <a href="#"></a>
     <div class="user-container">
     <img class="userAvatar" src="${tweet.user.avatars.small}"/>
@@ -51,6 +51,7 @@ $(function() {
     </a>
     </div>
     </footer>
+    </article>
     `;
   };
   $('.new-tweet form').on('submit', function(event) {
