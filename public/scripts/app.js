@@ -41,13 +41,13 @@ $(function() {
     <div class="tweet-timestamp">"${tweet.created_at}"</div>
     <div class="tweet-icons">
     <a href="#">
-    <i class="fa fa-flag"></i>
+    <i class="fas fa-flag"></i>
     </a>
     <a href="#">
-    <i class="fa fa-retweet"></i>
+    <i class="fas fa-retweet"></i>
     </a>
     <a href="#">
-    <i class="fa fa-heart"></i>
+    <i class="fas fa-heart"></i>
     </a>
     </div>
     </footer>
@@ -59,10 +59,10 @@ $(function() {
     // check with mentor about escape and cross site scripting
     const tweetText = escape($('textarea#newTweetText').val());
     if (tweetText.length === 0) {
-      return $('.error-msg').text('hey maybe type something!!');
+      return $('.error-msg').text('hey maybe try typing something?');
     }
     if (tweetText.length > 140) {
-      return $('.error-msg').text('hey maybe type less!!');
+      return $('.error-msg').text('wow keep it under 140 characters!');
     }
     $.ajax({
       url: '/tweets',

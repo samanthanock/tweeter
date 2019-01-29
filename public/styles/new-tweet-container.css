@@ -56,7 +56,7 @@ p {
 
 footer.new-tweet-footer {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   border-top: 2px dashed palevioletred;
   height: 2em;
   flex-direction: row;
@@ -67,18 +67,8 @@ div.tweet-timestamp {
   margin-top: 10px;
 }
 
-div.tweet-icons {
-  width: 20%;
-  display: flex;
-  color: pink
-  /* justify-content: space-between; */
-/* opacity: 0;
-  color: #00a087;
-  padding: 2px;
+i {
+  color: palevioletred;
+  font-size: 15px;
+  padding-right: 10px;
 }
-
-/* footer .tweet-icons a {
-  color: black;
-  padding: 2px;
-  text-decoration: none;
-} */
